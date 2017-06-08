@@ -10,10 +10,20 @@ echo \'93Loren ipso\'94 > a.txt write \'93lotion ipso\'94 into a.txt\
 git init starts git. never touch that .git directory\
 If you want to remove git, can delete the .git directory\
 \
+git status tell us the status of things (what has been edited since last commit, what has been staged for commit)\
+\
 git add a.txt tells git about a.txt (moved it into the staging area - saying we want to track it). b.txt and c.txt are still untracked\
 git add . \'97> adds the entire current directory to git staging\
 \
 quitting vim: hit esc several times to get out of edit mode. Then enter :q!\
 To save what you\'92ve edited, hit esc several times then enter :wq\
+Can skip using VI step if you type git commit -m \'93Changed a.txt\'94\
+These are reminders to yourself as to what was changed. So this is efficient but you\'92re limited to one line descriptions\
 \
-}
+To reset to most recent committed version: git reset HEAD b.txt\
+	b stays modified the way it was, its just no longer in the staging area\
+To revert completely to that last committed version, THEN type git checkout - - b.txt\
+\
+Good practice to make commits frequently\
+\
+Remove }
